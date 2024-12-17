@@ -1,4 +1,4 @@
-from active_learning_loop import ActiveLearningLoop
+from ActiveLearningCycle import ActiveLearningCycle
 from initial_batch_selector import InitialBatchSelector
 
 def main():
@@ -14,7 +14,7 @@ def main():
     greedy_cycles = 4
     output_dir = 'results/'
 
-    al_loop = ActiveLearningLoop(
+    al_loop = ActiveLearningCycle(
         initial_training_file='initial_batch.csv',
         num_cycles=total_cycles,
         num_uncertain=uncertain_cycles,
