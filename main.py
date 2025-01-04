@@ -26,6 +26,7 @@ def main():
         num_greedy=greedy_cycles,
         output_dir=output_dir
     )
+    al_loop.run()
 
 
 if __name__ == '__main__':
